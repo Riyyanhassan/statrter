@@ -55,16 +55,21 @@ body {
 
 .sub-container {
   display: flex;
-  width: 100%;
 }
 
 .sidebar {
   background-color: var(--grey-dark);
   flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hotel-view {
   background-color: red;
+  width: 100%;
+  height: 80rem;
 }
 
 .logo-picture {
@@ -108,4 +113,18 @@ body {
 .user-picture {
   height: 3rem;
   width: 3rem;
+}
+.sidebar-item {
+  list-style: none;
+  padding-top: 3.5rem;
+  color: var(--grey-light2);
+}
+.sidebar_link {
+  text-decoration: none;
+  font-size: 2rem;
+}
+.sidebar_icon {
+  height: 1.75rem;
+  width: 1.75rem;
+  margin-right: 2rem;
 }

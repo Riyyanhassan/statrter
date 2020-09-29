@@ -40,7 +40,17 @@
   height: 3rem;
   width: 3rem;
 }
+.sidebar-item {
+  list-style: none;
+  padding-top: 3.5rem;
+  color: var(--grey-light2);
+}
+.sidebar_link {
+  text-decoration: none;
+  font-size: 2rem;
+}
 .sidebar_icon {
   height: 1.75rem;
   width: 1.75rem;
+  margin-right: 2rem;
 }
