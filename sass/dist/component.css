@@ -1,0 +1,46 @@
+.logo-picture {
+  height: 4rem;
+  margin-left: 2rem;
+}
+
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search_input {
+  font-family: inherit;
+  font-weight: inherit;
+  width: 90%;
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 100px;
+  background-color: var(--grey-light2);
+}
+.search_button {
+  margin-left: -3.5rem;
+}
+.search_icon {
+  height: 2rem;
+  width: 2rem;
+  outline: none;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+}
+.user_icon {
+  height: 2rem;
+  width: 2rem;
+}
+.user-picture {
+  height: 3rem;
+  width: 3rem;
+}
+.sidebar_icon {
+  height: 1.75rem;
+  width: 1.75rem;
+}

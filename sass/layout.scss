@@ -8,15 +8,28 @@
 .header{
     height: 8rem;
     background-color: #fff;
-    border-bottom: var(---grey-light2);
+    border-bottom: var(--grey-light2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+////////////////////////sidebar + hotel view///////////
 .sub-container{
     display: flex;
+   
 }
-.side-bar{
+.sidebar{
 background-color: var(--grey-dark);
+flex: 0 0 18%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+
 }
 .hotel-view{
-    background-color: lawngreen;
+    background-color:red;
+    width: 100%;
+    height: 80rem;
     
 }

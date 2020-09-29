@@ -1,0 +1,79 @@
+.logo-picture{
+    height: 4rem;
+    margin-left: 2rem;
+
+}
+.search{
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+&_input{
+    font-family: inherit;
+    font-weight: inherit;
+    width: 90%;
+    border: none;
+    padding: .7rem 2rem;
+    border-radius: 100px;
+    background-color: var(--grey-light2);
+
+}
+&_button{
+    margin-left: -3.5rem;
+ 
+
+}
+&_icon{
+    height: 2rem;
+    width: 2rem;
+    outline: none;
+
+ 
+  
+    
+}
+}
+.user{
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+   
+&-iconbox{
+
+}
+&_icon{
+    height: 2rem;
+    width: 2rem;
+
+}
+&-picturebox{
+   
+
+}
+&-picture{
+    height: 3rem;
+    width: 3rem;
+
+}
+&-name{
+
+}
+}
+////////////////////////// sidebar +hotel view/////////
+.sidebar{
+
+&-ul{
+
+}
+&-item{
+
+}
+&_link{
+
+}
+&_icon{
+    height: 1.75rem;
+    width: 1.75rem;
+}
+}
