@@ -9,78 +9,132 @@
     </head>
     <body>
         <div class="container">
-            <header class="header">
-                <img src="img/logo.png" alt="logo pic" class="logo-picture">
-                <form class="search">
-                    <input class="search_input" type="search" placeholder="search nearst hotel">
+         <header class="header">
+             <img src="img/logo.png" alt="logo pic" class="logo-picture">
+            <form class="search">
+                    <input class="search_input" type="search" placeholder="Search Nearst Hotel">
                      <button class="search_button">
                     <svg class="search_icon">
                         <use xlink:href="img/sprite.svg#icon-search"> </use>
                     </svg>
                      </button>
-                </form>
-                <nav class="user">
+             </form>
+            <nav class="user">
                     <div class="user-iconbox"> 
                         <svg class="user_icon">
                         <use xlink:href="img/sprite.svg#icon-bookmark1"> </use>
-                    </svg>      
+                    </svg> 
+                    <span class="user_notification">13</span>   
                     </div>
                     <div class="user-iconbox">
                         <svg class="user_icon">
                         <use xlink:href="img/sprite.svg#icon-textsms"> </use>
-                    </svg>       
+                    </svg>  
+                    <span class="user_notification">10</span>     
                     </div>
                     <div class="user-picturebox"> 
-                        <img src="img/user-4.jpg" alt="owner" class="user-picture">      
+                        <img src="img/saqlain.jpg" alt="owner" class="user-picture">      
+                        <div class="user-name">  
+                        <span>Saqlain </span>    
+                        </div> 
                     </div>
-                    <div class="user-name">  
-                        <span>Saqlain </span>     
-                    </div>
-                </nav>
-             </header>
-            <div class="sub-container">
-                <div class="sidebar">
-                    <ul class="sidebar-ul">
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar_link">
-                            <svg class="sidebar_icon">
+            </nav>
+        </header>
+     <div class="sub-container">
+            <div class="sidebar">
+                    <ul class="sidebar_nav">
+                        <li class="sidebar_nav_item">
+                            <a href="#" class="sidebar_nav_link">
+                            <svg class="sidebar_nav_icon">
                                 <use xlink:href="img/sprite.svg#icon-spoon-knife"> </use>
                             </svg> 
                             <span>Hotel</span>   
                             </a>   
                         </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar_link">
-                            <svg class="sidebar_icon">
-                                <use xlink:href="img/sprite.svg#icon-airplane"> </use>
+                        <li class="sidebar_nav_item">
+                            <a href="#" class="sidebar_nav_link">
+                            <svg class="sidebar_nav_icon">
+                                <use xlink:href="img/sprite.svg#icon-plane"> </use>
                             </svg> 
                             <span>Flight</span> 
                              </a>     
                         </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar_link">
-                            <svg class="sidebar_icon">
+                        <li class="sidebar_nav_item">
+                            <a href="#" class="sidebar_nav_link">
+                            <svg class="sidebar_nav_icon">
                                 <use xlink:href="img/sprite.svg#icon-key"> </use>
                             </svg> 
                             <span>Car Rent</span> 
                             </a>     
                         </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar_link">
-                            <svg class="sidebar_icon">
-                                <use xlink:href="img/sprite.svg#icon-map2"> </use>
+                    <li class="sidebar_nav_item">
+                            <a href="#" class="sidebar_nav_link">
+                            <svg class="sidebar_nav_icon">
+                                <use xlink:href="img/sprite.svg#icon-map"> </use>
                             </svg> 
                             <span>Tours</span>  
                             </a>    
-                        </li>
-                    </ul>
-                    <div class="legal">
+                    </li>
+                </ul>
+                <div class="legal">
                         &copy; 2020 by National. All right reserved.
-                    </div>
                 </div>
-<!-- ////////////////////////////Hotel view -->
-
-                <div class="hotel-view"> hotel view and content</div>
+             </div>
+        <main class="hotel-view">
+             <div class="gallary">
+                 <figure class="gallary_item">
+                             <img src="img/hotel-1.jpg" class="gallary_photo">
+                    </figure>
+                     <figure class="gallary_item">
+                            <img src="img/hotel-2.jpg" class="gallary_photo">
+                     </figure>
+                       <figure class="gallary_item">
+                        <img src="img/hotel-3.jpg" class="gallary_photo">
+                        </figure>
+            </div>
+                 <div class="overview">
+                         <h1 class="overview_heading">Hotal las Palmas</h1>
+                     <div class="overview_stars">
+                            <svg class="overview_stars_icon">
+                                <use xlink:href="img/sprite.svg#icon-star-full"> </use>
+                            </svg> 
+                    </div>
+                    <div class="overview_stars">
+                            <svg class="overview_stars_icon">
+                                <use xlink:href="img/sprite.svg#icon-star-full"> </use>
+                            </svg> 
+                    </div>
+                    <div class="overview_stars">
+                            <svg class="overview_stars_icon">
+                                <use xlink:href="img/sprite.svg#icon-star-full"> </use>
+                            </svg> 
+                    </div>
+                    <div class="overview_stars">
+                            <svg class="overview_stars_icon">
+                                <use xlink:href="img/sprite.svg#icon-star-full"> </use>
+                            </svg> 
+                    </div>
+                     <div class="overview_stars">
+                            <svg class="overview_stars_icon">
+                                <use xlink:href="img/sprite.svg#icon-star-full"> </use>
+                            </svg> 
+                    </div>
+                        <div class="details">
+                            <div class="details_overview">
+                                <div class="details_overview_location">
+                                    <svg class="overview_location_icon">
+                                        <use xlink:href="img/sprite.svg#icon-location_pin"> </use>
+                                    </svg> 
+                                 </div>
+                                <button class="details_overview_discription">Albufeira, Purtugal</button>
+                            </div>
+                            <div class="details_hotel_review">
+                                    <div class="details_hotel_review_rating"> 6.8</div>
+                                    <div class="details_hotel_review_votes"> 450votes </div>
+                            </div>
+                     </div>
+                </div> 
+                 </main>
             </div>
         </div> 
     </body>

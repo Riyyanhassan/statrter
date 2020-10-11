@@ -25,11 +25,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 }
 
 .hotel-view {
-  background-color: red;
-  width: 100%;
+  background-color: var(--grey-light3);
+  flex: 1;
   height: 80rem;
+}
+
+.overview {
+  display: flex;
+  align-items: center;
+  background-color: var(--grey-light2);
+  border-bottom: var(--grey-light2);
 }

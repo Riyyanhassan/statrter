@@ -63,13 +63,19 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 }
 
 .hotel-view {
-  background-color: red;
-  width: 100%;
+  background-color: var(--grey-light3);
+  flex: 1;
   height: 80rem;
+}
+
+.overview {
+  display: flex;
+  align-items: center;
+  background-color: green;
+  border-bottom: var(--grey-light2);
 }
 
 .logo-picture {
@@ -87,44 +93,178 @@ body {
   font-family: inherit;
   font-weight: inherit;
   width: 90%;
-  border: none;
-  padding: 0.7rem 2rem;
+  padding: 1rem 2rem;
+  background-color: var(--grey-light3);
   border-radius: 100px;
-  background-color: var(--grey-light2);
+  border: none;
+  color: inherit;
+  transition: all 0.2s;
+}
+.search_input:focus {
+  width: 100%;
+  outline: none;
+  background-color: var(--grey-light4);
+}
+.search_input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: var(--grey-light4);
 }
 .search_button {
   margin-left: -3.5rem;
+  border: none;
+  background-color: var(--grey-light2);
+}
+.search_button:focus {
+  outline: none;
 }
 .search_icon {
-  height: 2rem;
-  width: 2rem;
-  outline: none;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .user {
   display: flex;
-  justify-content: space-between;
-  background-color: aqua;
+  align-self: stretch;
+  align-items: center;
+}
+.user > * {
+  height: 100%;
+  padding: 0 2rem;
+  cursor: pointer;
+}
+.user > *:hover {
+  background-color: var(--grey-light2);
+}
+.user-iconbox {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 .user_icon {
-  height: 2rem;
-  width: 2rem;
+  height: 2.25rem;
+  width: 2.25rem;
+  fill: var(--grey-dark-2);
+}
+.user_notification {
+  position: absolute;
+  right: 0.5rem;
+  top: 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 50%;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-picturebox {
+  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .user-picture {
-  height: 3rem;
-  width: 3rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
 }
-.sidebar-item {
+.user-name {
+  margin: 0 1.5rem;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: solid;
+}
+
+.sidebar_nav {
   list-style: none;
-  padding-top: 3.5rem;
-  color: var(--grey-light2);
+  margin-top: 3.5rem;
+  text-align: center;
+  font-size: 1.4rem;
+  justify-content: space-between;
 }
-.sidebar_link {
+.sidebar_nav_item {
+  position: relative;
+}
+.sidebar_nav_item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.sidebar_nav_item:first-child {
+  background-color: var(--primary);
+}
+.sidebar_nav_item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: var(--primary);
+  transform: scaleY(0);
+  transition: transform 0.2s, width 0.4s ease-in-out 0.2s;
+}
+.sidebar_nav_item:hover::before {
+  transform: scaleY(1);
+  width: 100%;
+}
+.sidebar_nav_link:link, .sidebar_nav_link:visited {
   text-decoration: none;
-  font-size: 2rem;
+  color: var(--grey-light);
+  text-transform: uppercase;
+  display: block;
+  padding: 1.5rem 3.5rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10;
 }
-.sidebar_icon {
+.sidebar_nav_icon {
   height: 1.75rem;
   width: 1.75rem;
   margin-right: 2rem;
+  fill: var(--grey-light);
+}
+
+.legal {
+  text-align: center;
+  color: var(--grey-light4);
+  font-size: 1.2rem;
+  padding: 2.5rem;
+}
+
+.gallary {
+  display: flex;
+}
+.gallary_item {
+  color: ivory;
+}
+.gallary_photo {
+  width: 100%;
+  display: block;
+}
+
+.overview {
+  display: flex;
+  align-items: center;
+}
+.overview_heading {
+  margin-right: 2rem;
+}
+.overview_stars {
+  display: flex;
+  align-items: center;
+}
+.overview_stars_icon, .overview_location_icon {
+  height: 1.75rem;
+  width: 1.75rem;
+  fill: var(--primary);
+}
+
+.details {
+  display: flex;
+  margin-left: auto;
+}
+.detailshotel_discription {
+  background-color: var(--primary);
 }
